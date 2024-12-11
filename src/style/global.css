@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  color: #fff;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "BoosterNextFY";
+  src: url("../../public/fonts/BoosterNextFY-Bold.woff2") format("woff2"),
+    url("../../public/fonts/BoosterNextFY-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BoosterNextFY";
+  src: url("../../public/fonts/BoosterNextFY-Regular.woff2") format("woff2"),
+    url("../../public/fonts/BoosterNextFY-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BoosterNextFY";
+  src: url("../../public/fonts/BoosterNextFY-Light.woff2") format("woff2"),
+    url("../../public/fonts/BoosterNextFY-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BoosterNextFY";
+  src: url("../../public/fonts/BoosterNextFY-Medium.woff2") format("woff2"),
+    url("../../public/fonts/BoosterNextFY-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "BoosterNextFY";
+  text-transform: uppercase;
+  font-size: 2.8125rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+
+p {
+  margin: 2.5rem 0;
+}
+
+.page {
+  background-image: url("../assets/imgs/bg-deco-left.svg"),
+    url("../assets/imgs/bg-deco-right.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: #3a3d57;
+  min-height: 100vh;
+  background-size: 150px, 250px;
+  background-attachment: fixed;
+  padding: 5rem 2.5rem;
+  margin-left: 220px;
+  background-position-x: 220px, 100%;
+  background-position-y: 100%, 0px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 970px) {
+  .page {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+.page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-header {
+  width: 200px;
+  background-color: white;
+}

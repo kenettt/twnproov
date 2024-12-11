@@ -1,0 +1,144 @@
+:root {
+  --primary-bg-color: #333333;
+  --secondary-bg-color: #4e5168;
+  --border-color: #ccc;
+  --active-button-bg: white;
+  --active-button-color: black;
+  --inactive-button-color: white;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+}
+
+thead {
+  box-sizing: border-box;
+  background-color: var(--primary-bg-color);
+}
+
+tbody {
+  box-sizing: border-box;
+}
+
+.table-row {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-header,
+.table-cell {
+  padding: 12px;
+  text-align: left;
+}
+
+.table-header {
+  position: relative;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  width: 200px;
+}
+
+.table-row:nth-child(even) {
+  background-color: var(--secondary-bg-color);
+}
+
+.table-row:nth-child(odd) {
+  background-color: transparent;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.pagination-buttons {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.button {
+  border-radius: 9999px;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-active {
+  background-color: var(--active-button-bg);
+  color: var(--active-button-color);
+}
+
+.button-inactive {
+  color: var(--inactive-button-color);
+}
+
+.expanded-content {
+  display: flex;
+  background-color: white;
+  padding: 0.625rem 1rem;
+}
+
+.expanded-content p:first-child {
+  margin-top: 0;
+}
+
+.expanded-content p:last-child {
+  margin-bottom: 0;
+}
+
+.td-expanded {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 970px) {
+  .button {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+  }
+
+  .pagination {
+    font-size: 0.875rem;
+  }
+
+  .pagination-buttons {
+    height: 15px;
+    width: 15px;
+  }
+
+  .table {
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
