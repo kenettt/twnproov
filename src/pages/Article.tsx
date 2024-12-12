@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../style/article.css";
+import Loading from "../components/Loading";
 
 type ArticleType = {
   id: string;
@@ -55,7 +56,7 @@ export default function Article() {
   return (
     <div>
       {loading ? (
-        <div>Loading...</div>
+        <Loading />
       ) : (
         <div>
           <h1>{article?.title}</h1>
