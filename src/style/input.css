@@ -1,0 +1,44 @@
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white; /* Adjust as needed */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.styled-select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 38px;
+  background-color: white;
+  color: black;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.styled-select:focus {
+  border-color: black;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-arrow {
+  position: absolute;
+  right: 0.5em; /* Adjust as needed to align with the end */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure clicks go to the select */
+  color: black;
+  width: 14px;
+  height: 14px;
+}

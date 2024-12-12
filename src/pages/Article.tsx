@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../style/article.css";
 
-type Article = {
+type ArticleType = {
   id: string;
   boolean: boolean;
   phone: string;
@@ -32,7 +32,7 @@ type Article = {
 };
 
 export default function Article() {
-  const [article, setArticle] = useState<Article | null>(null);
+  const [article, setArticle] = useState<ArticleType | null>(null);
   const [loading, setLoading] = useState(true);
 
   const fetchArticle = async () => {

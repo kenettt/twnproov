@@ -1,0 +1,101 @@
+.game-container {
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alive-percentage {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background: #f1f1f1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.8125rem;
+  line-height: 2rem;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.7);
+  margin: 0 0 1.25rem;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+
+  justify-content: end;
+  background-color: #14cc76;
+  color: white;
+  text-align: center;
+  height: 2rem;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid > div {
+  width: 12px;
+  height: 12px;
+  background-color: #adf0d028;
+  box-shadow: 0 0 0 2px #3a3d57; /* Simulate a gap with a shadow */
+  background-clip: content-box; /* Ensure the shadow doesn't overlap the content */
+}
+
+.grid > div.alive {
+  background-color: white;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  justify-content: end;
+}
+
+.controls .select-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .game-container {
+    padding: 3rem 1rem;
+  }
+  .controls .select-container {
+    flex-wrap: wrap;
+  }
+  .button-container {
+    justify-content: center;
+  }
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(12px, 1fr));
+  }
+}
